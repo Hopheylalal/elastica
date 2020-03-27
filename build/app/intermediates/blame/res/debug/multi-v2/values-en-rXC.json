@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Alexander\\AndroidStudioProjects\\elastica\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rXC\\values-en-rXC.xml",
+            "outputFile": "/Users/alexander/AndroidStudioProjects/elastica/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rXC/values-en-rXC.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Alexander\\.gradle\\caches\\transforms-2\\files-2.1\\78d13a1052de831f78ea27d603b3b48b\\core-1.0.0\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "/Users/alexander/.gradle/caches/transforms-2/files-2.1/efd788ae606860b921397083266c0625/core-1.0.0/res/values-en-rXC/values-en-rXC.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

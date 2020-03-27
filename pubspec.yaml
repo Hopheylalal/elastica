@@ -27,7 +27,7 @@ dependencies:
   cupertino_icons: ^0.1.3
   material_design_icons_flutter: ^3.4.4995
   intro_views_flutter: ^2.8.0
-  device_preview: ^0.2.6
+  device_preview: ^0.3.0+1
   dots_indicator: ^1.1.0
   introduction_screen: ^1.0.7
   path: ^1.6.4
@@ -44,7 +44,6 @@ dependencies:
   dio: ^3.0.8
   cached_network_image: ^2.0.0
   flutter_spinkit: ^4.1.1+1
-  splashscreen: ^1.2.0
   fluttertoast: ^3.1.3
   wakelock: ^0.1.3+4
   provider: ^4.0.4
@@ -52,15 +51,21 @@ dependencies:
 
 
 dev_dependencies:
+
   hive_generator: ^0.7.0
   build_runner: ^1.7.3
   flutter_test:
     sdk: flutter
+  flutter_native_splash: ^0.1.9
 
 
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
+
+flutter_native_splash:
+  image: assets/img/splash.png
+  color: "ffffff"
 
 # The following section is specific to Flutter.
 flutter:
@@ -85,10 +90,12 @@ flutter:
 
 
   assets:
-    - lib/assets/sounds/
+    - assets/sounds/
     - lib/assets/img/
     - lib/assets/video/
     - lib/assets/cups/
+
+
 
 
 

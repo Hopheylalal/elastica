@@ -52,133 +52,42 @@ class _FatWidgetState extends State<FatWidget> {
               bottomLeft: Radius.circular(30)),
         ),
         child: progress == false
-            ? Column(
+            ? SafeArea(
+              child: Column(
           children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.only(top: 30, bottom: 20),
-              child: Text(
-                'УРОВЕНЬ ЖИРОВОЙ ТКАНИ',
-                style: TextStyle(
-                  fontSize: fontSizeTitle,
-                  fontFamily: 'Rubik',
+              Padding(
+                padding: const EdgeInsets.only(top: 30, bottom: 20),
+                child: Text(
+                  'УРОВЕНЬ ЖИРОВОЙ ТКАНИ',
+                  style: TextStyle(
+                    fontSize: fontSizeTitle,
+                    fontFamily: 'Rubik',
+                  ),
                 ),
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Expanded(
-                    child: Column(
-                      children: <Widget>[
-                        InkWell(
-                          onTap: () {
-                            setState(() {
-                              print(progress);
-                              progress = true;
-                              print(progress);
-                            });
-                          },
-                          child: Container(
-                            child: Center(
-                              child: Icon(
-                                MyFlutterApp.chart,
-                                size: iconSize,
-                                color: Color(0XFFC9C9C9),
-                              ),
-                            ),
-                            height: 70,
-                            width: 70,
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              color: Colors.white,
-                            ),
-                          ),
-                        ),
-                        Text(
-                          'ПРОГРЕСС',
-                          style: TextStyle(
-                              fontFamily: 'RubikR',
-                              fontSize: fontSize,
-                              color: Colors.grey),
-                        )
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 5),
-                    child: InkWell(
-                      onTap: () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(
-                            builder: (context) => FatResultScreen(1),
-                          ),
-                        );
-                      },
-                      child: Container(
-                        height: 130,
-                        width: 130,
-                        child: Card(
-                          elevation: 1,
-                          color: Color(0XFFC74DD4),
-                          shape: StadiumBorder(
-                            side: BorderSide(
-                                color: Color(0xFFFFFFFF), width: 6),
-                          ),
-                          child: Center(
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: <Widget>[
-                                Padding(
-                                    padding: const EdgeInsets.only(left: 8),
-                                    child: lastFatResult == null
-                                        ? Text(
-                                      '?',
-                                      style: TextStyle(
-                                          fontSize: 40,
-                                          fontFamily: 'Rubik',
-                                          color: Colors.white),
-                                    )
-                                        : Text(
-                                      lastFatResult.fatResult
-                                          .toStringAsFixed(1),
-                                      style: TextStyle(
-                                          fontSize: 40,
-                                          fontFamily: 'Rubik',
-                                          color: Colors.white),
-                                    )),
-                                Text(
-                                  '%',
-                                  style: TextStyle(
-                                      fontFamily: 'Rubik',
-                                      color: Colors.white),
-                                )
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: Column(
-                      children: <Widget>[
-                        InkWell(
-                          onTap: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (context) => FatCount(),
-                              ),
-                            );
-                          },
-                          child: Padding(
-                            padding: const EdgeInsets.only(top: 4),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Expanded(
+                      child: Column(
+                        children: <Widget>[
+                          InkWell(
+                            onTap: () {
+                              setState(() {
+                                print(progress);
+                                progress = true;
+                                print(progress);
+                              });
+                            },
                             child: Container(
-                              child: Icon(
-                                MyFlutterApp.fat,
-                                size: iconSize2,
-                                color: Color(0XFFC9C9C9),
+                              child: Center(
+                                child: Icon(
+                                  MyFlutterApp.chart,
+                                  size: iconSize,
+                                  color: Color(0XFFC9C9C9),
+                                ),
                               ),
                               height: 70,
                               width: 70,
@@ -188,26 +97,119 @@ class _FatWidgetState extends State<FatWidget> {
                               ),
                             ),
                           ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(top: 1),
-                          child: Text(
-                            'ЗАМЕРИТЬ',
+                          Text(
+                            'ПРОГРЕСС',
                             style: TextStyle(
-                              color: Colors.grey,
-                              fontFamily: 'RubikR',
-                              fontSize: fontSize,
+                                fontFamily: 'RubikR',
+                                fontSize: fontSize,
+                                color: Colors.grey),
+                          )
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 5),
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (context) => FatResultScreen(1),
+                            ),
+                          );
+                        },
+                        child: Container(
+                          height: 130,
+                          width: 130,
+                          child: Card(
+                            elevation: 1,
+                            color: Color(0XFFC74DD4),
+                            shape: StadiumBorder(
+                              side: BorderSide(
+                                  color: Color(0xFFFFFFFF), width: 6),
+                            ),
+                            child: Center(
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: <Widget>[
+                                  Padding(
+                                      padding: const EdgeInsets.only(left: 8),
+                                      child: lastFatResult == null
+                                          ? Text(
+                                        '?',
+                                        style: TextStyle(
+                                            fontSize: 40,
+                                            fontFamily: 'Rubik',
+                                            color: Colors.white),
+                                      )
+                                          : Text(
+                                        lastFatResult.fatResult
+                                            .toStringAsFixed(1),
+                                        style: TextStyle(
+                                            fontSize: 40,
+                                            fontFamily: 'Rubik',
+                                            color: Colors.white),
+                                      )),
+                                  Text(
+                                    '%',
+                                    style: TextStyle(
+                                        fontFamily: 'Rubik',
+                                        color: Colors.white),
+                                  )
+                                ],
+                              ),
                             ),
                           ),
-                        )
-                      ],
+                        ),
+                      ),
                     ),
-                  ),
-                ],
-              ),
-            )
+                    Expanded(
+                      child: Column(
+                        children: <Widget>[
+                          InkWell(
+                            onTap: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => FatCount(),
+                                ),
+                              );
+                            },
+                            child: Padding(
+                              padding: const EdgeInsets.only(top: 4),
+                              child: Container(
+                                child: Icon(
+                                  MyFlutterApp.fat,
+                                  size: iconSize2,
+                                  color: Color(0XFFC9C9C9),
+                                ),
+                                height: 70,
+                                width: 70,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 1),
+                            child: Text(
+                              'ЗАМЕРИТЬ',
+                              style: TextStyle(
+                                color: Colors.grey,
+                                fontFamily: 'RubikR',
+                                fontSize: fontSize,
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              )
           ],
-        )
+        ),
+            )
             : AnimatedSwitcher(
           duration: const Duration(milliseconds: 100),
           transitionBuilder: (Widget child, Animation<double> animation) {

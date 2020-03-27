@@ -24,6 +24,7 @@ void main() async {
 
   runApp(
     Elastica(),
+    
   );
 }
 
@@ -43,13 +44,13 @@ void main() async {
 class Elastica extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setPreferredOrientations(
-        [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
-    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-//        statusBarColor: Colors.white,
-//        statusBarIconBrightness: Brightness.dark,
-        systemNavigationBarColor: Colors.white,
-        systemNavigationBarIconBrightness: Brightness.dark));
+//    SystemChrome.setPreferredOrientations(
+//        [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
+//    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+////        statusBarColor: Colors.white,
+////        statusBarIconBrightness: Brightness.dark,
+//        systemNavigationBarColor: Colors.white,
+//        systemNavigationBarIconBrightness: Brightness.dark));
 
     return ChangeNotifierProvider(
         create: (context) => StatusMain(),

@@ -36,11 +36,12 @@ class _FatResultScreenState extends State<FatResultScreen> {
 
     return WillPopScope(
       onWillPop: () async => false,
-      child: SafeArea(
-        child: Scaffold(
-          backgroundColor: Color(0xFFFFF176),
-          body: Container(
-            margin: EdgeInsets.all(10),
+      child: Scaffold(
+        backgroundColor: Color(0xFFFFF176),
+        body: SafeArea(
+          bottom: false,
+          child: Container(
+            margin: EdgeInsets.only(bottom: 10, left: 10,right: 10),
             decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.all(Radius.circular(20))),
@@ -84,7 +85,7 @@ class _FatResultScreenState extends State<FatResultScreen> {
                                     ? Text(
                                         'ПРОИЗВЕДИТЕ ЗАМЕР',
                                         style: TextStyle(
-                                          fontSize: 20,
+                                          fontSize: fontSizeTitle,
                                           fontFamily: 'Rubik',
                                         ),
                                       )

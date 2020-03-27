@@ -1,11 +1,12 @@
 # This is a generated file; do not edit or check into version control.
-audioplayers=C:\\src\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\audioplayers-0.14.0\\
-firebase_core=C:\\src\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\firebase_core-0.4.3+3\\
-firebase_core_web=C:\\src\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\firebase_core_web-0.1.1+2\\
-firebase_storage=C:\\src\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\firebase_storage-3.1.1\\
-fluttertoast=C:\\src\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\fluttertoast-3.1.3\\
-path_provider=C:\\src\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\path_provider-1.6.0\\
-sqflite=C:\\src\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\sqflite-1.2.0\\
-video_player=C:\\src\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\video_player-0.10.7\\
-video_player_web=C:\\src\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\video_player_web-0.1.2\\
-wakelock=C:\\src\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\wakelock-0.1.3+4\\
+audioplayers=/Users/alexander/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/audioplayers-0.14.2/
+firebase_core=/Users/alexander/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-0.4.4+3/
+firebase_core_web=/Users/alexander/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_web-0.1.1+2/
+firebase_storage=/Users/alexander/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage-3.1.3/
+fluttertoast=/Users/alexander/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/fluttertoast-3.1.3/
+path_provider=/Users/alexander/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-1.6.5/
+path_provider_macos=/Users/alexander/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_macos-0.0.4/
+sqflite=/Users/alexander/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite-1.3.0/
+video_player=/Users/alexander/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/video_player-0.10.8+1/
+video_player_web=/Users/alexander/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/video_player_web-0.1.2+1/
+wakelock=/Users/alexander/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/wakelock-0.1.4+1/
